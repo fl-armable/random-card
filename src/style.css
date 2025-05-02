@@ -3,3 +3,24 @@
 body{
     background: green;
 }
+.card{
+    background: white;
+    margin: 0.75rem auto;
+    border-radius: 15px;
+    width: 250px;
+}
+.header, .footer{
+    font-size: 80px;
+}
+.header{
+    text-align: start;
+    padding-left: 1.5rem;
+}
+.footer{
+    text-align: end;
+    padding-right: 1.5rem;
+}
+.center{
+    font-size: 160px;
+    text-align: center;
+} /* .center hace las veces de .spade, .club, .heart & .diamond. pues el color se renderiza según el palo */

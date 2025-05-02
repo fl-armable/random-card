@@ -16,22 +16,47 @@
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid w-25 h-50 bg-white mt-3 rounded">
-      <div class="text-start fs-1 py-3">
-        <p>1</p>
+    <div class="container-fluid">
+      <div class="text-center my-2">
+        <button class="btn btn-warning" type="button">
+          Card change every 10 seconds, CLICK to change it now!
+        </button>
       </div>
-      <div class="text-center fs-1 py-3">
-        <p>1</p>
+      <div class="card">
+        <div class="header">
+          <p id="valueTop"></p>
+        </div>
+        <div class="center">
+          <p><span></span></p>
+        </div>
+        <div class="footer">
+          <p id="valueBottom"></p>
+        </div>
       </div>
-      <div class="text-end fs-1 py-3">
-        <p>1</p>
+      <div class="text-center mb-2">
+        <h5>Have fun changing the size of the card!!!</h5>
       </div>
-    </div>
-
-    <div class="fixed-bottom text-center py-1">
+      <div class="row">
+        <div class="col input-group input-group-sm">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Width</span>
+          <input type="number" class="form-control" aria-describedby="w_inputGuide" id="widthValue" placeholder="250">
+          <div id="w_inputGuide" class="form-text ms-1" style="color: lightgray;">
+            Type a number between 250 and 400 y press ENTER
+          </div>
+        </div>
+        <div class="col input-group input-group-sm">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Height</span>
+          <input type="number" class="form-control" aria-describedby="h_inputGuide" id="heightValue" placeholder="528">
+          <div id="h_inputGuide" class="form-text ms-1" style="color: lightgray;">
+            Type a number between 168 and 528 y press ENTER
+          </div>
+        </div>
+      </div>
+    <div class="text-center py-1">
       Made with ❤️ by
-      <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <a href="https://github.com/fl-armable" class="link-dark">fl-armable</a>
     </div>
+  </div>
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
